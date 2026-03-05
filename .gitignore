@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual env
+venv/
+.env
+
+# Local data outputs
+data/
+!data/.gitkeep
+
+# OS junk
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
