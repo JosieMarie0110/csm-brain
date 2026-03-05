@@ -1,4 +1,4 @@
-# 🧠 CSM Brain RAG
+# CSM Brain RAG
 
 AI assistant designed for Customer Success Managers (CSMs).  
 This tool uses **Retrieval Augmented Generation (RAG)** to answer questions using a local knowledge base of Customer Success resources.
@@ -13,7 +13,7 @@ It helps CSMs quickly generate:
 
 ---
 
-# 🚀 Features
+# Features
 
 • AI-powered Customer Success assistant  
 • Retrieval Augmented Generation (RAG) using local documents  
@@ -28,7 +28,7 @@ It helps CSMs quickly generate:
 
 ---
 
-# 🧠 Example Use Cases
+# Example Use Cases
 
 Customer Success teams can ask questions like:
 
@@ -41,7 +41,7 @@ The assistant retrieves relevant knowledge from uploaded documents and generates
 
 ---
 
-# 🏗 Architecture
+# Architecture
 
 This project implements a lightweight **RAG pipeline**.
 
@@ -66,7 +66,7 @@ Core components:
 
 ---
 
-# 📂 Project Structure
+# Project Structure
 
 csm-brain-rag
 │
@@ -78,7 +78,7 @@ csm-brain-rag
 ├── data/
 │ └── .gitkeep
 
-# ⚙️ Setup Instructions
+# Setup Instructions
 
 Follow these steps to run the project locally.
 
