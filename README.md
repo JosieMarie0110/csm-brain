@@ -1,165 +1,99 @@
-Project Status: Actively under development
+CS Brain
 
-# CSM Brain RAG
+A lightweight tool that helps Customer Success Managers structure responses to complex customer situations such as incident updates, renewal risk assessments, executive summaries, and internal account strategy discussions.
 
-AI assistant designed for Customer Success Managers (CSMs).  
-This tool uses **Retrieval Augmented Generation (RAG)** to answer questions using a local knowledge base of Customer Success resources.
+Overview
 
-It helps CSMs quickly generate:
+Customer Success work often involves translating complex account situations into clear communication and actionable next steps.
 
-• churn risk analysis  
-• onboarding checklists  
-• customer success playbooks  
-• executive-level insights  
-• QBR preparation guidance  
+Whether responding to an escalation, preparing an executive summary, or assessing renewal risk, teams must organize incomplete information into structured responses for different audiences.
 
----
+CS Brain was built to support that process by helping structure customer context, business goals, and recommended actions into consistent response formats.
 
-# Features
+Features
 
-• AI-powered Customer Success assistant  
-• Retrieval Augmented Generation (RAG) using local documents  
-• Clean Gradio web interface  
-• Structured answer formats:
-  - Playbook
-  - Checklist
-  - Executive summary
-  - Bullet summary
-• Adjustable document retrieval (Top-K sources)  
-• Source citations for transparency  
+• Generate structured executive summaries
+• Draft customer-facing communication
+• Organize renewal risk assessments
+• Structure incident communication updates
+• Support internal strategy discussions for customer accounts
 
----
+<img width="995" height="1049" alt="image" src="https://github.com/user-attachments/assets/8ce50bcb-d7a3-41d9-a5d5-fa7d12acd0fb" />
+<img width="1498" height="1131" alt="image" src="https://github.com/user-attachments/assets/9b4afdbc-34cb-4898-ba71-9af791f3ffcd" />
+<img width="1501" height="1292" alt="image" src="https://github.com/user-attachments/assets/05b15d20-9176-4c07-8493-cc11693f130d" />
+<img width="986" height="1064" alt="image" src="https://github.com/user-attachments/assets/7809b4a9-d80e-4f15-9bea-6c9aabee6f39" />
 
-# Example Use Cases
+Installation
 
-Customer Success teams can ask questions like:
+Clone the repository:
 
-• "What churn risks should I watch for in a SaaS account?"  
-• "Create an onboarding checklist for a new SaaS customer."  
-• "How should I run a QBR with a CIO?"  
-• "What signals indicate declining product adoption?"  
+git clone https://github.com/yourusername/csm-brain.git
+cd csm-brain
 
-The assistant retrieves relevant knowledge from uploaded documents and generates structured responses.
+Create a virtual environment:
 
----
-
-# Architecture
-
-This project implements a lightweight **RAG pipeline**.
-
-User Question  
-↓  
-Embedding Generation  
-↓  
-Similarity Search  
-↓  
-Top-K Document Retrieval  
-↓  
-LLM Response Generation  
-↓  
-Structured Answer + Sources
-
-Core components:
-
-• **OpenAI embeddings** for document search  
-• **Local vector similarity retrieval**  
-• **Gradio UI** for interaction  
-• **Chunked document knowledge base**
-
----
-
-# Project Structure
-
-csm-brain-rag
-│
-├── app_gradio.py # Gradio UI
-├── ingest_pdfs.py # Embedding + document ingestion
-├── README.md
-├── .gitignore
-│
-├── data/
-│ └── .gitkeep
-
-# Setup Instructions
-
-Follow these steps to run the project locally.
-
----
-
-## 1. Clone the Repository
-
-```bash
-git clone https://github.com/YOUR_USERNAME/csm-brain-rag.git
-cd csm-brain-rag
-```
-
----
-
-## 2. Create a Python Virtual Environment
-
-```bash
 python3 -m venv venv
 source venv/bin/activate
-```
 
----
+Install dependencies:
 
-## 3. Install Dependencies
+pip install gradio openai python-dotenv
+Usage
 
-```bash
-pip install --upgrade pip
-pip install gradio openai
-```
+Run the application:
 
----
-
-## 4. Set Your OpenAI API Key
-
-```bash
-export OPENAI_API_KEY="your_api_key_here"
-```
-
-You can get a key from:
-
-https://platform.openai.com/api-keys
-
----
-
-## 5. Ingest Documents into the Knowledge Base
-
-This step converts documents into embeddings for retrieval.
-
-```bash
-python ingest_pdfs.py
-```
-
----
-
-## 6. Launch the Application
-
-```bash
 python app_gradio.py
-```
 
----
+Once the interface launches:
 
-## 7. Open the App
+Enter the customer context
 
-Open your browser and go to:
+Define the business goal
 
-```
-http://127.0.0.1:7860
-```
+Provide the request or question
 
-You can now start asking questions using the **CSM Brain interface**.
+Select the desired response format
 
----
+Generate a structured response
 
-# Example Questions
+Project Structure
+csm-brain/
+│
+├── app_gradio.py        # Main application interface
+├── ask_brain.py         # Response generation logic
+├── formats.json         # Response templates
+├── banner1.png          # UI banner
+├── ingest_pdfs.py       # Knowledge base ingestion
+├── chunk_docs.py        # Document processing
+├── data/                # Processed data storage
+├── pdfs/                # Source documents
+└── README.md
+Example Use Cases
 
-Try prompts like:
+Executive Communication
 
-• What churn risks should I watch for in a SaaS account?  
-• Create a SaaS onboarding checklist.  
-• What signals indicate declining product adoption?  
-• How should I prepare for a QBR with executive stakeholders?
+Create concise leadership updates summarizing customer situations and business impact.
+
+Renewal Risk Reviews
+
+Organize signals that may indicate churn risk and outline mitigation steps.
+
+Incident Updates
+
+Provide structured communication about service disruptions and resolution progress.
+
+Internal Strategy Planning
+
+Support internal alignment around account priorities and next actions.
+
+Future Improvements
+
+• Additional response templates
+• Expanded account strategy scenarios
+• Improved formatting for different communication styles
+• Enhanced knowledge base integration
+
+Author
+
+Built as part of a portfolio exploring Customer Success workflows, communication strategy, and lightweight technical tooling.
+
