@@ -1,70 +1,160 @@
-# 🧠 CSM Brain RAG
+CS Brain
 
-AI assistant designed for Customer Success Managers (CSMs).  
-This tool uses **Retrieval Augmented Generation (RAG)** to answer questions using a local knowledge base of Customer Success resources.
+AI-powered strategy assistant for Customer Success Managers
 
-It helps CSMs quickly generate:
+CS Brain is a lightweight AI tool designed to help Customer Success Managers generate strategic responses, risk analysis, and executive-ready messaging based on Customer Success best practices.
 
-• churn risk analysis  
-• onboarding checklists  
-• customer success playbooks  
-• executive-level insights  
-• QBR preparation guidance  
+The tool acts as a CSM knowledge assistant, helping translate complex customer situations into structured insights and actionable communication.
 
----
+This project was built as part of a Customer Success AI toolkit designed to support real-world CS workflows such as account strategy, incident communication, and customer risk evaluation.
 
-# 🚀 Features
+Why This Project Exists
 
-• AI-powered Customer Success assistant  
-• Retrieval Augmented Generation (RAG) using local documents  
-• Clean Gradio web interface  
-• Structured answer formats:
-  - Playbook
-  - Checklist
-  - Executive summary
-  - Bullet summary
-• Adjustable document retrieval (Top-K sources)  
-• Source citations for transparency  
+Customer Success Managers often need to quickly:
 
----
+assess customer health signals
 
-# 🧠 Example Use Cases
+craft executive-ready messaging
 
-Customer Success teams can ask questions like:
+respond to incidents
 
-• "What churn risks should I watch for in a SaaS account?"  
-• "Create an onboarding checklist for a new SaaS customer."  
-• "How should I run a QBR with a CIO?"  
-• "What signals indicate declining product adoption?"  
+align product usage with business outcomes
 
-The assistant retrieves relevant knowledge from uploaded documents and generates structured responses.
+prepare for QBR / EBR discussions
 
----
+However, most tools focus on product analytics, not strategic thinking and communication.
 
-# 🏗 Architecture
+CS Brain bridges that gap by helping CSMs structure their thinking into clear, strategic outputs.
 
-This project implements a lightweight **RAG pipeline**.
+Key Features
 
-User Question  
-↓  
-Embedding Generation  
-↓  
-Similarity Search  
-↓  
-Top-K Document Retrieval  
-↓  
-LLM Response Generation  
-↓  
-Structured Answer + Sources
+Structured Strategic Responses
 
-Core components:
+Transforms open-ended questions into clear, structured guidance aligned with Customer Success best practices.
 
-• **OpenAI embeddings** for document search  
-• **Local vector similarity retrieval**  
-• **Gradio UI** for interaction  
-• **Chunked document knowledge base**
+Multiple Response Formats
 
----
+Users can choose how they want the output structured, including:
 
-# 📂 Project Structure
+Strategic guidance
 
+Executive summaries
+
+Customer messaging
+
+Playbooks and action plans
+
+Customer Success Knowledge Assistant
+
+The system uses a knowledge base of Customer Success concepts to help generate responses aligned with common CS frameworks.
+
+Fast Idea Generation
+
+CSMs can quickly brainstorm messaging or strategy when preparing for:
+
+customer calls
+
+renewal discussions
+
+internal strategy meetings
+
+executive updates
+
+Example Use Cases
+Account Risk Evaluation
+
+Input
+Customer adoption has declined and engagement with the platform has dropped over the past quarter.
+
+Output
+Structured analysis outlining potential risk signals, recommended actions, and communication strategies.
+
+Executive Communication
+
+Input
+Need to explain an incident impact to a customer executive.
+
+Output
+Clear executive-ready messaging summarizing the situation, impact, and next steps.
+
+Strategic Customer Planning
+
+Input
+Customer is expanding infrastructure and evaluating additional solutions.
+
+Output
+Strategic guidance on positioning value and aligning the platform with customer objectives.
+
+Tech Stack
+
+Python
+
+Gradio (UI framework)
+
+OpenAI API
+
+PDF knowledge ingestion (RAG-style knowledge base)
+
+How It Works
+
+The user enters a question or customer scenario.
+
+CS Brain retrieves relevant context from the knowledge base.
+
+The AI generates a structured response based on the selected output format.
+
+The result helps the CSM quickly produce clear, professional communication or strategy guidance.
+
+Running the Project Locally
+
+Clone the repository
+
+git clone https://github.com/YOUR_USERNAME/csm-brain-clean.git
+cd csm-brain-clean
+
+Create a virtual environment
+
+python3 -m venv venv
+source venv/bin/activate
+
+Install dependencies
+
+pip install -r requirements.txt
+
+Set your OpenAI API key
+
+export OPENAI_API_KEY="your_api_key_here"
+
+Run the app
+
+python app_gradio.py
+Future Improvements
+
+improved response structuring
+
+additional Customer Success frameworks
+
+enhanced knowledge base ingestion
+
+playbook expansion
+
+integration with other CS AI tools
+
+Part of a Larger Customer Success AI Toolkit
+
+This project is part of a broader set of experimental tools exploring how AI can assist Customer Success teams.
+
+Related projects include:
+
+Customer Signal Analyzer
+Analyzes customer communication to detect risk, resistance, or alignment signals.
+
+Incident to Executive Translator
+Converts technical incident descriptions into executive-ready communication.
+
+Business Outcome Translator (planned)
+Maps product adoption signals to measurable business outcomes.
+
+Author
+
+Built by a Customer Success professional with 15+ years of experience in SaaS, cybersecurity, and technical account management, exploring how AI can support modern Customer Success workflows.
