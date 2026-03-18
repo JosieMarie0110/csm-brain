@@ -9,11 +9,11 @@ Actively under development
 
 
 
-AI-powered strategy assistant for Customer Success Managers**
+AI-powered strategy assistant for Customer Success Managers
 
 CS Brain is a lightweight AI tool designed to help Customer Success Managers generate **strategic responses, risk analysis, and executive-ready messaging based on Customer Success best practices.
 
-The tool acts as a **CSM knowledge assistant**, helping translate complex customer situations into structured insights and actionable communication.
+The tool acts as a CSM knowledge assistant**, helping translate complex customer situations into structured insights and actionable communication.
 
 This project was built as part of a Customer Success AI toolkit designed to support real-world CS workflows such as account strategy, incident communication, and customer risk evaluation.
 
@@ -128,8 +128,8 @@ Strategic guidance on positioning value and aligning the platform with customer 
 
 1. The user enters a question or customer scenario.
 2. CS Brain retrieves relevant context from the knowledge base.
-3. The AI generates a **structured response based on the selected output format.**
-4. The result helps the CSM quickly produce **clear, professional communication or strategy guidance.
+3. The AI generates a structured response based on the selected output format.
+4. The result helps the CSM quickly produce clear, professional communication or strategy guidance.
 
 ---
 
@@ -198,4 +198,4 @@ Maps product adoption signals to measurable business outcomes.
 
 ## Author
 
-Built by a Customer Success professional with **15+ years of experience in SaaS, cybersecurity, and technical account management, exploring how AI can support modern Customer Success workflows.
+Built by a Customer Success professional with 15+ years of experience in SaaS, cybersecurity, and technical account management, exploring how AI can support modern Customer Success workflows.
