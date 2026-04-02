@@ -110,18 +110,6 @@ Active development:
 - Enhanced knowledge base  
 - Playbook expansion  
 
----
-
-## Part of a CS AI Toolkit
-
-Related tools:
-
-- Customer Signal Analyzer  
-- Incident → Executive Summary Generator  
-- Business Outcome Translator  
----
-
-
 
 ---
 
