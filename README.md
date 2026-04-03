@@ -50,17 +50,7 @@ Transforms open-ended inputs into structured outputs such as:
 - Built-in Customer Success knowledge base  
 - Fast idea generation for real scenarios  
 
----
 
-## Example Use
-
-**Input:**  
-Declining adoption and engagement  
-
-**Output:**  
-- Risk analysis  
-- Recommended actions  
-- Communication strategy  
 
 ---
 
@@ -83,15 +73,6 @@ Declining adoption and engagement
 
 
 
-## Why It Matters
-
-Customer Success requires more than data—it requires clear thinking and communication.
-
-This tool focuses on:
-**turning customer signals into strategy and action.**
-
----
-
 ## Tech Stack
 
 - Python  
@@ -99,16 +80,6 @@ This tool focuses on:
 - OpenAI API  
 - JSON templates  
 - RAG-style knowledge base  
-
----
-
-## Status
-
-Active development:
-- Improved response structure  
-- Expanded CS frameworks  
-- Enhanced knowledge base  
-- Playbook expansion  
 
 
 ---
