@@ -7,10 +7,6 @@ AI-powered strategy assistant for Customer Success Managers.
 
 Helps generate structured responses, risk analysis, and executive-ready messaging based on Customer Success best practices.
 
----
-
-## Overview
-
 Supports CSMs in turning complex customer situations into:
 - Clear strategy  
 - Actionable insights  
