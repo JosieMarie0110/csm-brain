@@ -113,36 +113,3 @@ Run the app
 ```
 python app_gradio.py
 ```
-
----
-
-## Future Improvements
-
-- improved response structuring  
-- additional Customer Success frameworks  
-- enhanced knowledge base ingestion  
-- playbook expansion  
-- integration with other CS AI tools  
-
----
-
-## Part of a Larger Customer Success AI Toolkit
-
-This project is part of a broader set of experimental tools exploring how AI can assist Customer Success teams.
-
-Related projects include:
-
-**Customer Signal Analyzer**  
-Analyzes customer communication to detect risk, resistance, or alignment signals.
-
-**Incident to Executive Translator**  
-Converts technical incident descriptions into executive-ready communication.
-
-**Business Outcome Translator (planned)**  
-Maps product adoption signals to measurable business outcomes.
-
----
-
-## Author
-
-Built by a Customer Success professional with 15+ years of experience in SaaS, cybersecurity, and technical account management, exploring how AI can support modern Customer Success workflows.
